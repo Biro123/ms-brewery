@@ -51,14 +51,4 @@ public class CustomerController {
         customerService.deleteById(customerId);
     }
 
-    // Exception handler for errors in dto flagged by spring validation annotations
-    @ExceptionHandler(ConstraintViolationException.class)
-    public ResponseEntity<List> validationErrorHandler(ConstraintViolationException e) {
-        List<String> errors = new ArrayList<>(e.getConstraintViolations().size());
-        e.getConstraintViolations().forEach(
-            constraintViolation -> errors.add(constraintViolation.getPropertyPath() + " : " + constraintViolation.getMessage())
-        );
-        return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
-    }
-
 }
