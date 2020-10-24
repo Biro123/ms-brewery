@@ -1,6 +1,7 @@
 package com.oldman.msbrewery.services;
 
 import com.oldman.msbrewery.web.model.BeerDto;
+import com.oldman.msbrewery.web.model.BeerStyleEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +15,7 @@ public class BeerServiceImpl implements BeerService {
         return BeerDto.builder()
                 .id(UUID.randomUUID())
                 .beerName("Black Sheep")
-                .beerStyle("Real Ale")
+                .beerStyle(BeerStyleEnum.ALE)
                 .build();
     }
 

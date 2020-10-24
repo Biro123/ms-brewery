@@ -3,6 +3,7 @@ package com.oldman.msbrewery.web.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.oldman.msbrewery.services.BeerService;
 import com.oldman.msbrewery.web.model.BeerDto;
+import com.oldman.msbrewery.web.model.BeerStyleEnum;
 import org.hamcrest.core.Is;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -39,7 +40,7 @@ class BeerControllerTest {
         validBeer = BeerDto.builder()
                 .id(UUID.randomUUID())
                 .beerName("Beer1")
-                .beerStyle("IPA")
+                .beerStyle(BeerStyleEnum.IPA)
                 .upc(123456789012L)
                 .build();
     }
