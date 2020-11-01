@@ -72,39 +72,61 @@ include::{snippets}/v1/beer-update/response-body.adoc[]
 
 == Customer Controller
 
-GET Customer
+=== GET Customer
 
 One showing how to make a request using cURL:
-include::{snippets}/v1/beer-get/curl-request.adoc[]
+include::{snippets}/v1/customer-get/curl-request.adoc[]
 
 One showing the HTTP request:
-include::{snippets}/v1/beer-get/http-request.adoc[]
+include::{snippets}/v1/customer-get/http-request.adoc[]
 
 One showing the HTTP response:
-include::{snippets}/v1/beer-get/http-response.adoc[]
+include::{snippets}/v1/customer-get/http-response.adoc[]
 
 Response Body:
-include::{snippets}/v1/beer-get/response-body.adoc[]
+include::{snippets}/v1/customer-get/response-body.adoc[]
 
 Response Fields:
-include::{snippets}/v1/beer-get/response-fields.adoc[]
+include::{snippets}/v1/customer-get/response-fields.adoc[]
 
-NEW Customer
+
+=== POST Customer (New)
 
 One showing how to make a request using cURL:
-include::{snippets}/v1/beer-new/curl-request.adoc[]
+include::{snippets}/v1/customer-new/curl-request.adoc[]
 
 One showing the HTTP request:
-include::{snippets}/v1/beer-new/http-request.adoc[]
+include::{snippets}/v1/customer-new/http-request.adoc[]
 
 One showing the HTTP response:
-include::{snippets}/v1/beer-new/http-response.adoc[]
+include::{snippets}/v1/customer-new/http-response.adoc[]
 
 Request Fields:
-include::{snippets}/v1/beer-new/request-fields.adoc[]
+include::{snippets}/v1/customer-new/request-fields.adoc[]
 
 Request Body Fields:
-include::{snippets}/v1/beer-new/request-body.adoc[]
+include::{snippets}/v1/customer-new/request-body.adoc[]
 
 Response Body:
-include::{snippets}/v1/beer-new/response-body.adoc[]
+include::{snippets}/v1/customer-new/response-body.adoc[]
+
+
+=== PUT Customer (Update)
+
+One showing how to make a request using cURL:
+include::{snippets}/v1/customer-update/curl-request.adoc[]
+
+One showing the HTTP request:
+include::{snippets}/v1/customer-update/http-request.adoc[]
+
+One showing the HTTP response:
+include::{snippets}/v1/customer-update/http-response.adoc[]
+
+Request Fields:
+include::{snippets}/v1/customer-update/request-fields.adoc[]
+
+Request Body Fields:
+include::{snippets}/v1/customer-update/request-body.adoc[]
+
+Response Body:
+include::{snippets}/v1/customer-update/response-body.adoc[]
