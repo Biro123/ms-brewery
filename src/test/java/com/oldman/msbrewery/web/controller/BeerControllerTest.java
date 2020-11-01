@@ -20,6 +20,7 @@ import org.springframework.restdocs.payload.FieldDescriptor;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.util.StringUtils;
 
+import java.time.OffsetDateTime;
 import java.util.UUID;
 
 import static org.mockito.ArgumentMatchers.any;
@@ -81,12 +82,12 @@ class BeerControllerTest {
                                 parameterWithName("beerId").description("UUID of beer")
                         ),
                         responseFields(
-                                fieldWithPath("id").description("Id of Beer"),
+                                fieldWithPath("id").description("Id of Beer").type(UUID.class),
                                 fieldWithPath("beerName").description("Beer Name"),
                                 fieldWithPath("beerStyle").description("Beer Style, eg. IPA, Stout etc."),
                                 fieldWithPath("upc").description("UPC of Beer"),
-                                fieldWithPath("createdDate").description("Date Created"),
-                                fieldWithPath("lastUpdatedDate").description("Date Updated")
+                                fieldWithPath("createdDate").description("Date Created").type(OffsetDateTime.class),
+                                fieldWithPath("lastUpdatedDate").description("Date Updated").type(OffsetDateTime.class)
                         )
                 ));
     }
@@ -167,6 +168,5 @@ class BeerControllerTest {
                             .descriptionsForProperty(path), ". ")));
         }
     }
-
 
 }
