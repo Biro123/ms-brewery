@@ -11,7 +11,7 @@ documentation snippets:
 
 == Beer Controller
 
-GET BEER
+=== GET Beer
 
 One showing how to make a request using cURL:
 include::{snippets}/v1/beer-get/curl-request.adoc[]
@@ -28,7 +28,8 @@ include::{snippets}/v1/beer-get/response-body.adoc[]
 Response Fields:
 include::{snippets}/v1/beer-get/response-fields.adoc[]
 
-NEW BEER
+
+=== POST Beer (New)
 
 One showing how to make a request using cURL:
 include::{snippets}/v1/beer-new/curl-request.adoc[]
@@ -47,6 +48,27 @@ include::{snippets}/v1/beer-new/request-body.adoc[]
 
 Response Body:
 include::{snippets}/v1/beer-new/response-body.adoc[]
+
+
+=== PUT Beer (Update)
+
+One showing how to make a request using cURL:
+include::{snippets}/v1/beer-update/curl-request.adoc[]
+
+One showing the HTTP request:
+include::{snippets}/v1/beer-update/http-request.adoc[]
+
+One showing the HTTP response:
+include::{snippets}/v1/beer-update/http-response.adoc[]
+
+Request Fields:
+include::{snippets}/v1/beer-update/request-fields.adoc[]
+
+Request Body Fields:
+include::{snippets}/v1/beer-update/request-body.adoc[]
+
+Response Body:
+include::{snippets}/v1/beer-update/response-body.adoc[]
 
 == Customer Controller
 
